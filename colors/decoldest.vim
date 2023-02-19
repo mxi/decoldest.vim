@@ -1,5 +1,5 @@
 " Name:       decoldest
-" Version:    2023.02.18
+" Version:    2023.02.19
 " Maintainer: https://github.com/mxi
 " License:    MIT
 "
@@ -29,6 +29,7 @@ if &background ==? "dark"
   let s:base0     = {"gui": "#101010", "cterm": " 233"}
   let s:base1     = {"gui": "#404040", "cterm": " 238"}
   let s:base2     = {"gui": "#707070", "cterm": " 242"}
+  let s:base27    = {"gui": "#919191", "cterm": " 246"}
   let s:base3     = {"gui": "#a0a0a0", "cterm": " 247"}
   let s:base4     = {"gui": "#c0c0c0", "cterm": "   7"}
   let s:accent0   = {"gui": "#00dd42", "cterm": "  41"} " green
@@ -44,6 +45,7 @@ else
   let s:base0     = {"gui": "#e8e8e8", "cterm": " 254"}
   let s:base1     = {"gui": "#d0d0d0", "cterm": " 145"}
   let s:base2     = {"gui": "#a0a0a0", "cterm": " 242"}
+  let s:base27    = {"gui": "#8a8a8a", "cterm": " 245"}
   let s:base3     = {"gui": "#808080", "cterm": " 238"}
   let s:base4     = {"gui": "#585858", "cterm": " 233"}
   let s:accent0   = {"gui": "#00af34", "cterm": "  35"} " green
@@ -82,9 +84,9 @@ call s:hi("Pmenu"       , s:none     , s:base1     , "none"        )
 call s:hi("PmenuSel"    , s:none     , s:base2     , "none"        )
 call s:hi("Search"      , s:none     , s:base0     , "reverse"     )
 call s:hi("SignColumn"  , s:none     , s:base0     , "none"        )
-call s:hi("StatusLine"  , s:base0    , s:base4     , "reverse"     )
-call s:hi("StatusLineNC", s:base0    , s:base4     , "none"        )
-call s:hi("VertSplit"   , s:base0    , s:base0     , "none"        )
+call s:hi("StatusLine"  , s:base0    , s:base4     , "none"        )
+call s:hi("StatusLineNC", s:base0    , s:base27    , "none"        )
+call s:hi("VertSplit"   , s:base27   , s:base0     , "none"        )
 call s:hi("Visual"      , s:none     , s:base1     , "none"        )
 let &background = s:background
 " }}} Editor
