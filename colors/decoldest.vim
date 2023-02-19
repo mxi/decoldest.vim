@@ -1,5 +1,5 @@
 " Name:       decoldest
-" Version:    2022.11.24
+" Version:    2023.02.18
 " Maintainer: https://github.com/mxi
 " License:    MIT
 "
@@ -61,6 +61,7 @@ let s:none              = {"gui": "NONE"   , "cterm": "NONE"}
 
 " Editor {{{
 let s:background = &background
+"                         Foreground   Background    Attributes
 call s:hi("Normal"      , s:base4    , s:base0     , "none"        )
 call s:hi("NormNoBG"    , s:base4    , s:none      , "none"        )
 call s:hi("NormNoBGBold", s:base4    , s:none      , "bold"        )
@@ -81,8 +82,8 @@ call s:hi("Pmenu"       , s:none     , s:base1     , "none"        )
 call s:hi("PmenuSel"    , s:none     , s:base2     , "none"        )
 call s:hi("Search"      , s:none     , s:base0     , "reverse"     )
 call s:hi("SignColumn"  , s:none     , s:base0     , "none"        )
-call s:hi("StatusLine"  , s:base4    , s:base0     , "reverse"     )
-call s:hi("StatusLineNC", s:base4    , s:base0     , "none"        )
+call s:hi("StatusLine"  , s:base0    , s:base4     , "reverse"     )
+call s:hi("StatusLineNC", s:base0    , s:base4     , "none"        )
 call s:hi("VertSplit"   , s:base0    , s:base0     , "none"        )
 call s:hi("Visual"      , s:none     , s:base1     , "none"        )
 let &background = s:background
