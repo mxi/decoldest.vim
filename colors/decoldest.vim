@@ -1,5 +1,5 @@
 " Name:       decoldest
-" Version:    2023.02.19
+" Version:    2023.02.20
 " Maintainer: https://github.com/mxi
 " License:    MIT
 "
@@ -125,5 +125,9 @@ hi! link PreProc Keyword
 hi! link Statement Keyword
 hi! link Conditional Keyword
 " }}} General
+
+" Vimscript {{{
+hi! link vimUserFunc NormNoBG
+" }}} Vimscript
 
 " vim: sw=2 ts=2 sts=2 et fdm=marker
