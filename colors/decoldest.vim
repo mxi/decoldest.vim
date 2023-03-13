@@ -127,7 +127,15 @@ hi! link Conditional Keyword
 " }}} General
 
 " Vimscript {{{
-hi! link vimUserFunc NormNoBG
+hi! link vimFuncName Keyword
 " }}} Vimscript
+
+" Python {{{
+hi! link pythonBuiltin Keyword
+" }}} Python
+
+" Lua {{{
+hi! link luaFunction Keyword
+" }}} Lua
 
 " vim: sw=2 ts=2 sts=2 et fdm=marker
