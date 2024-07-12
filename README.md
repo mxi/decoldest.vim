@@ -1,7 +1,11 @@
-# Decoldest
-
 ![decoldest-dark](images/dark.png)
 ![decoldest-light](images/light.png)
+
+# Decoldest
+
+> [!NOTE]
+> The theme served me well, but I was getting tired of vimscript. An overhaul
+> can be found at [mxi/vampire.nvim](https://github.com/mxi/vampire.nvim).
 
 My tuned colorscheme for ultimate productivity.
 
